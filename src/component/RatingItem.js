@@ -23,13 +23,12 @@ class RatingItem extends Component {
 
     render() {
         const stats = getStats(this.props.data);
-        console.log(stats)
+        console.log(stats);
 
         return (
             <div>
-
                 {ratingNames.map(item => (
-                    <div key={item}>{item} : {stats[item]}</div>
+                    <div key={item}>{item} : {stats[item] || 0}</div>
                 ))}
             </div>
         );
@@ -37,3 +36,4 @@ class RatingItem extends Component {
 }
 
 export default RatingItem;
+
