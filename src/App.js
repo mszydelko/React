@@ -36,7 +36,7 @@ class App extends Component {
             return item.title.toLowerCase()
                 .indexOf(filterbyText.toLowerCase()) !== -1
         });
-        console.log(visibleData)
+        console.log(visibleData);
         this.setState({
             visibleData
         })
@@ -58,10 +58,7 @@ class App extends Component {
                                   rating={rating} />
                     ))}
                 </div>
-                {visibleData.map(({rating}) => (
-                    <RatingItem data={visibleData}/>
-                ))}
-
+                <RatingItem data={visibleData}/>
             </div>
         );
     }

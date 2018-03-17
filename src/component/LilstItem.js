@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import RatingItem from './RatingItem'
 
 class ListItem extends Component {
 
@@ -13,7 +12,7 @@ class ListItem extends Component {
                     }
                 </div>
                 <h3>{title}</h3>
-                <RatingItem rating={rating}/>
+                <div>{rating}</div>
             </div>
         );
     }
